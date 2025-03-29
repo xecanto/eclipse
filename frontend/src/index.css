@@ -1,0 +1,79 @@
+/* Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* Then import Tailwind */
+@import 'tailwindcss';
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Background gradient for radial gradients */
+@layer utilities {
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+}
+
+/* Float animations with varying speeds */
+.animate-float-1 {
+  animation: float 15s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float 20s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float 25s ease-in-out infinite;
+}
+
+/* Animations for hero section */
+.animate-fadeIn {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.animate-slideUp {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-out;
+}
+
+/* Gold shimmer effect for special elements */
+.gold-shimmer {
+  background: linear-gradient(90deg, #000000 0%, #5a4a1a 20%, #f0bd5e 50%, #5a4a1a 80%, #000000 100%);
+  background-size: 200% 100%;
+  animation: shimmer 4s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Global styles */
+body {
+  @apply bg-black text-white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.place-card {
+  display: none !important;
+}
