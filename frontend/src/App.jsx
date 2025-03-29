@@ -5,13 +5,17 @@ import MenuPage from './pages/MenuPage';
 import ReservationPage from './pages/ReservationPage';
 import ContactPage from './pages/ContactPage';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
   { path: "/", element: <LandingPage /> },
   { path: "/menu", element: <MenuPage /> },
   { path: "/reservations", element: <ReservationPage /> },
   { path: "/contact", element: <ContactPage /> },
   { path: "*", element: <NotFound /> }
-]);
+], 
+{
+  basename: "/eclipse"
+});
 
 function App() {
   return <RouterProvider router={router} />;
