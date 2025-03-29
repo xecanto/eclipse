@@ -77,3 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 .place-card {
   display: none !important;
 }
+
+/* Add to your existing CSS file */
+.my-masonry-grid {
+  display: flex;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}

@@ -24,7 +24,8 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Menu', path: '/menu' },
-    { name: 'Reservations', path: '/reservations' },
+    // { name: 'Reservations', path: '/reservations' },
+    { name: 'Album', path: '/album' },
     { name: 'Contact', path: '/contact' },
   ];
 
