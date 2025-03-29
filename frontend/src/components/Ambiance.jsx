@@ -1,5 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import image3 from '../assets/images/3.avif';
 
 const Ambiance = () => {
   const { ref, inView } = useInView({
@@ -43,7 +44,7 @@ const Ambiance = () => {
                   <div className="text-yellow-500 text-right mt-6">❞</div>
                 </div>
               {/* </div> */}
-              <img src="/images/3.avif" alt="Eclipse Ambiance" className="object-cover w-full h-full" />
+              <img src={image3} alt="Eclipse Ambiance" className="object-cover w-full h-full" />
             </div>
             
             {/* Decorative elements */}

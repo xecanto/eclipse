@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/images/logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo acts as home link */}
           <Link to="/" className="font-serif text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-500 flex items-center">
-            <img src="/images/logo.jpg" alt="Eclipse Logo" className="w-14 h-14 rounded-full inline-block mr-2" />
+            <img src={logo} alt="Eclipse Logo" className="w-14 h-14 rounded-full inline-block mr-2" />
             ECLIPSE
           </Link>
 

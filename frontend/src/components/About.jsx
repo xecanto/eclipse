@@ -1,5 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import image1 from '../assets/images/1.png';
+import image2 from '../assets/images/2.png';
 
 const About = () => {
   const { ref: sectionRef, inView: sectionVisible } = useInView({
@@ -55,7 +57,7 @@ const About = () => {
                   {/* <div className="h-full w-full flex items-center justify-center">
                     <span className="text-xl text-yellow-300/40 tracking-wider uppercase">Eclipse Ambiance</span>
                   </div> */}
-                  <img src="/images/1.png" alt="Eclipse Ambiance" className="object-cover w-full h-full" />
+                  <img src={image1} alt="Eclipse Ambiance" className="object-cover w-full h-full" />
                 </div>
                 {/* Gold corner accents */}
                 <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-yellow-500"></div>
@@ -69,7 +71,7 @@ const About = () => {
                     <span className="text-xl text-yellow-300/40 tracking-wider uppercase">Our Team</span>
                   </div> */}
 
-                  <img src="/images/2.png" alt="Eclipse Team" className="object-cover w-full h-full" />
+                  <img src={image2} alt="Eclipse Team" className="object-cover w-full h-full" />
                 </div>
                 {/* Gold corner accents */}
                 <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-yellow-500"></div>
