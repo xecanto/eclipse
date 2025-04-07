@@ -26,6 +26,7 @@ const Navbar = () => {
     { name: 'Menu', path: '/menu' },
     // { name: 'Reservations', path: '/reservations' },
     { name: 'Album', path: '/album' },
+    { name: 'The BatCave', path: '/batcave' },
     { name: 'Contact', path: '/contact' },
   ];
 

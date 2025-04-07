@@ -5,6 +5,7 @@ import MenuPage from './pages/MenuPage';
 import ReservationPage from './pages/ReservationPage';
 import ContactPage from './pages/ContactPage';
 import AlbumPage from './pages/AlbumPage';
+import BatCavePage from './pages/BatCavePage';
 
 const router = createBrowserRouter(
   [
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
   // { path: "/reservations", element: <ReservationPage /> },
   { path: "/contact", element: <ContactPage /> },
   { path: "/album", element: <AlbumPage /> },
+  { path: "/batcave", element: <BatCavePage /> },
   { path: "*", element: <NotFound /> }
 ], 
 {
