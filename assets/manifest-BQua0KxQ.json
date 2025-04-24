@@ -2,7 +2,7 @@
   "name": "Eclipse Lounge and Grill",
   "short_name": "Eclipse",
   "description": "Eclipse Lounge and Grill - Fine dining and drinks in a sophisticated ambiance",
-  "start_url": "/eclipse/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#FFD54F",
@@ -11,7 +11,7 @@
     "name": "Goheer",
     "url": "https://xecanto.github.io/portfolio/"
   },
-  "homepage_url": "https://xecanto.github.io/portfolio/",
+  "homepage_url": ".",
   "icons": [
     {
       "src": "logo.ico",
